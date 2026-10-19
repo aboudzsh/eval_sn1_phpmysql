@@ -1,3 +1,24 @@
+# Version réalisée
+
+Nom : Benzouak  
+Prénom : Abdoullah
+
+Le site utilise PHP et MySQL avec les notions des cours fournis. L’envoi d’images n’est pas réalisé, à la demande de l’étudiant. Les images fournies sont réutilisées ; les nouveaux événements reçoivent une image selon leur catégorie. Les fichiers PHP ajoutés sont sans commentaires.
+
+Accès avec MAMP : http://localhost:8888/eval_sn1_phpmysql-main/index.php
+
+Connexion MySQL configurée dans `config.php` : port 8889, base `agenda`, compte local `root` / `root`. La connexion PDO s’appelle `$dbh`, comme dans le cours.
+
+`database/reservation.sql` crée la table manquante. `database/rendu.sql` contient l’export complet avec les deux comptes d’origine, les douze événements et trois réservations de démonstration. L’import de cet export remplace les trois tables : il n’est pas nécessaire de réimporter `agenda.sql` ou `reservation.sql` ensuite.
+
+Le fichier `EXPLICATIONS.md` explique le fonctionnement, les liens avec les cours et les étapes à essayer. Le CSS et les maquettes HTML d’origine sont conservés ; l’application utilise les pages PHP.
+
+La version reste un exercice pédagogique : le contrôle des places précède l’insertion. La gestion de réservations strictement simultanées nécessiterait des transactions et un verrouillage, non développés dans les cours fournis.
+
+Le sujet d’origine est conservé ci-dessous.
+
+---
+
 # Évaluation PHP / MySQL – Agenda d'événements
 
 Application de gestion d'événements (concerts, conférences, ateliers, sport) à développer en **PHP** (sans framework) avec une base **MySQL**.
@@ -65,8 +86,8 @@ Le rendu se fait sur **votre fork**. Avant la date limite :
 1. Complétez ce bloc dans le `README.md` (remplacez les `...`) :
 
    ```text
-   Nom       : ...
-   Prénom    : ...
+   Nom       : Benzouak
+   Prénom    : Abdoullah
    ```
 
    > La correction se fera avec les comptes de test fournis (`admin@agenda.fr` et `user@agenda.fr`) : ne les supprimez pas et ne changez pas leur mot de passe.
